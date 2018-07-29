@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+</head>
+<body>
+  <div id="playingArea" class="playingArea" oncontextmenu="return false;">
+</div>
+<footer id="bar-bottom" class="gui bar-bottom">
+  <div class="unitIconArea">
+      <div id="unitIcon" class="unitIcon"></div>
+      <div class="unitNameAndNumbers" id="unitNameAndNumbers">
+          <div id="unitName" class="gui-label name"></div>
+          <div id="numberOfUnits" class="gui-label number"></div>
+    </div>
+  </div>
+  <div class="unitDetails" id="unitDetails">
+    <div id="hp" class="gui-label hp"></div>
+    <div id="hpBar" class = "hp-bar"></div>
+    <div id="attack" class="gui-label attack">attack</div>
+    <div id="defense" class="gui-label defense">defense</div>
+  </div>
+  <div class="buttons">
+    <button id="q" class="gui-button">Button Q</button>
+    <button id="w" class="gui-button">Button W</button>
+    <button id="e" class="gui-button">Button E</button>
+    <div class="gui-label">Select a Unit or Building with left click.<br>
+      Produce units from your buildings.<br>
+      Use right click to move a selected unit.</div>
+  </div>
+</footer>
+<script src="jquery.js"></script>
+<script src="maps/alpha_forest.js"></script>
+<script src="player.js"></script>
+<script src="units.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

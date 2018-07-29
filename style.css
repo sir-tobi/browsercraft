@@ -1,0 +1,142 @@
+@font-face {
+  font-family: 'Warcraft';
+  src: url('res/fonts/warcraft.ttf') format('truetype'); 
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Warcraft', serif;
+  color: white;
+  cursor:url(res/gui/cursor.png), auto;
+  background-color: #26292C;
+}
+
+.red:hover {
+  filter: drop-shadow(3px 3px 5px rgb(48, 255, 37));
+}
+
+.selected {
+  filter: drop-shadow(3px 3px 5px rgb(48, 175, 37));
+}
+
+.selected:hover {
+  filter: drop-shadow(3px 3px 5px rgb(48, 255, 37));
+}
+
+.unit, .envObject {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+}
+
+.gui {
+  position: fixed;
+  top: calc(100vh - 190px);
+  background: url(res/gui/rock.jpg);
+  border: solid 5px #26292C;
+  margin: 0;
+  height: 190px;
+  width: 100vw;
+  z-index: 100;
+}
+
+.unitIconArea {
+  float: left;
+  width: 160px;
+}
+
+#unitIcon {
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: 120px;
+  margin: 20px 20px 0 20px;
+  border: solid 5px #26292C;
+}
+
+.unitDetails {
+  float: left;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  margin: 0 50px 0 0;
+  width: 300px;
+}
+
+.buttons {
+  margin: 20px 0 0 60px;
+  display: flex;
+}
+
+.unitNameAndNumbers {
+  display: flex;
+}
+
+.unitName {
+  margin: 0;
+  padding: 0;
+}
+
+.numberOfUnis {
+  margin: 0;
+  padding: 0;
+}
+
+.gui-label {
+  text-align: center;
+  color: white;
+  width: 100%;
+  margin: 0 0 0 10px;
+  padding: 10px;
+}
+
+.hp {
+  border-radius: 5px;
+  padding: 0;
+  margin: 20px 0 0 0px;
+  z-index: 110;
+  width: 300px;
+  background-color: rgba(10, 10, 10, 0.2);
+  padding: 10px 0 10px 0;
+}
+
+.hp-bar {
+  position: absolute;
+  border-radius: 5px;
+  margin: 20px 0 0 0px;
+  padding: 18px 0 18px 0;
+}
+
+.gui-button {
+  position: inline;
+  font-size: 1.2em;
+  color: white;
+  box-shadow: 5px 5px #000000;
+  height: 5em;
+  width: 8em;
+  margin-left: 10px;
+  padding: 0;
+  background: url(res/gui/rock.jpg);
+  border: solid 5px #26292C;
+  border-radius: 5px;
+  outline: none;
+  font-family: 'Warcraft', serif;
+  cursor:url(res/gui/cursor.png), auto;
+}
+
+.gui-button:active {
+  transform: translateY(4px);
+  box-shadow: 2px 2px #000000;
+  outline: none;
+}
+
+.blue {
+  -webkit-filter: invert(40%) grayscale(0) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(400%) contrast(2);
+  filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(500%) contrast(0.8);
+}
+
+.blue:hover, .teal:hover, .violet:hover {
+  cursor:url(res/gui/cursor_atk.png), auto;
+  -webkit-filter: invert(40%) grayscale(0) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(400%) contrast(2);
+  filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(500%) contrast(0.8) drop-shadow(3px 3px 5px rgb(255, 37, 37));;
+}
